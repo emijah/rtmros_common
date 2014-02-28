@@ -12,7 +12,7 @@ This document explains how to use and how to contribute to rtm-ros-robotics soft
  rtm-ros-robotics software is distributed as ros-debian packages, if you already use the ROS system, install this software as follows:
  - `sudo apt-get install ros-$ROS_DISTRO-rtmros-common`
  
- If you have not yet installed the base ROS system, please follow [these instructions](http://wiki.ros.org/hydro/Installation/Ubuntu). These typically tend to be:
+ If you have not yet installed the base ROS system, please follow [these instructions](http://wiki.ros.org/hydro/Installation/Ubuntu). These typically tend to be:  
  1. ``sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -a` main" > /etc/apt/sources.list.d/ros-latest.list'``  
  2. `wget http://packages.ros.org/ros.key -O - | sudo apt-key add -`  
  3. `sudo apt-get update`  
