@@ -33,36 +33,35 @@ This document explains how to use and how to contribute to rtm-ros-robotics soft
      - `rosws merge https://raw.github.com/start-jsk/rtmros_common/master/.rosinstall -y`  
     Otherwise, to compile only the target repository
      - `wstool set rtm-ros-robotics/rtmros_common https://github.com/start-jsk/rtmros_common --git -y`
-  6. `wstool update `
-  7. `cd ..`
-  8. `source /opt/ros/hydro/setup.bash`
-  9. `rosdep install -v -r --from-paths src --ignore-src --rosdistro hydro -y`
-  10. `catkin_make`
+  5. `wstool update `
+  6. `cd ..`
+  7. `source /opt/ros/hydro/setup.bash`
+  8. `rosdep install -v -r --from-paths src --ignore-src --rosdistro hydro -y`
+  9. `catkin_make`
 
 3. Contributing to rtm-ros-robotics related projects.
- - First fork the target repository on GitHub
- - Move to the package directory
- - `$ source ~/catkin_ws/devel/setup.bash`
- - '$`roscd rtmros_common`
- - Add your forked repository called `<name>` as `<github>`
- - `git remote add <github> <name>`
-To add this repository, you would replace `<name>` with https://github.com/start-jsk/rtmros_common.git
- - `git add origin https://github.com/<your github user name>/rtmros_common`
- - `git pull upstream master`
- - write awesome code
- - `git commit -m "detailed description of what you did"`
- - `git push origin master`
- - Submit a pull request on GitHub to the repository
- - Please check travic-ci status after sending your pull request.
+ 1. First fork the target repository on GitHub
+ 2. Move to the package directory
+  1. `$ source ~/catkin_ws/devel/setup.bash`
+  2. '$`roscd rtmros_common`
+ 3. Add your forked repository called `<name>` as `<github>`
+ 4. `git remote add <github> <name>`  
+   (To add this repository, you would replace `<name>` with https://github.com/start-jsk/rtmros_common.git)
+ 5. `git add origin https://github.com/<your github user name>/rtmros_common`
+ 6. `git pull upstream master`
+ 7. write awesome code
+ 8. `git commit -m "detailed description of what you did"`
+ 9. `git push origin master`
+ 10. Submit a pull request on GitHub to the repository
+ 11. Please check travic-ci status after sending your pull request.
 
-4. Uses other forked repository *before* merged into master.
+4. Use other forked repository *before* merging into master.
 
-You don't need to wait for the maintainers to merge some pull requests by others
-before you use them.
- - Adding other's remote repository to your git remote
- - `git remote add <awesome-fork> https://github.com/<user>/rtmros_common`
- - Fetch branches from the remote.
- - `git fetch <awesome-fork>`
- - Merge those remote branch into your current branch
- - `git merge <awesome-fork>/<branch-name>`
+ You don't need to wait for the maintainers to merge some pull requests by others before you use them.
+ 1. Add other remote repository to your git remote  
+   `git remote add <awesome-fork> https://github.com/<user>/rtmros_common`
+ 2. Fetch branches from the remote  
+   `git fetch <awesome-fork>`
+ 3. Merge those remote branch into your current branch  
+   `git merge <awesome-fork>/<branch-name>`
 
