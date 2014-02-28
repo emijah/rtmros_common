@@ -28,22 +28,21 @@ This document explains how to use and how to contribute to rtm-ros-robotics soft
   1. `mkdir -p ~/catkin_ws/src`
   2. `cd ~/catkin_ws/src`
   3. `wstool init .`
- 
- To compile everything
+  4.  Decide what you want to compile
 
-  6. `rosws merge https://raw.github.com/start-jsk/rtmros_common/master/.rosinstall -y`
- 
- Otherwise, to compile only the target repository
+    To compile everything
 
-  6. `wstool set rtm-ros-robotics/rtmros_common https://github.com/start-jsk/rtmros_common --git -y`
+     - `rosws merge https://raw.github.com/start-jsk/rtmros_common/master/.rosinstall -y`
  
- After this both methods need the following procedures.
+    Otherwise, to compile only the target repository
 
-  7. `wstool update `
-  8. `cd ..`
-  9. `source /opt/ros/hydro/setup.bash`
-  10. `rosdep install -v -r --from-paths src --ignore-src --rosdistro hydro -y`
-  11. `catkin_make`
+     - `wstool set rtm-ros-robotics/rtmros_common https://github.com/start-jsk/rtmros_common --git -y`
+ 
+  6. `wstool update `
+  7. `cd ..`
+  8. `source /opt/ros/hydro/setup.bash`
+  9. `rosdep install -v -r --from-paths src --ignore-src --rosdistro hydro -y`
+  10. `catkin_make`
 
 3. Contributing to rtm-ros-robotics related projects.
  - First fork the target repository on GitHub
