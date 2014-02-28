@@ -30,12 +30,15 @@ This document explains how to use and how to contribute to rtm-ros-robotics soft
   3. `wstool init .`
  
  To compile everything
+
   6. `rosws merge https://raw.github.com/start-jsk/rtmros_common/master/.rosinstall -y`
  
  Otherwise, to compile only the target repository
+
   6. `wstool set rtm-ros-robotics/rtmros_common https://github.com/start-jsk/rtmros_common --git -y`
  
  After this both methods need the following procedures.
+
   7. `wstool update `
   8. `cd ..`
   9. `source /opt/ros/hydro/setup.bash`
