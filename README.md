@@ -23,10 +23,10 @@ This document explains how to use and how to contribute to rtm-ros-robotics soft
 
 2. Compile from source code
  You have two choices, one is to compile the whole rtm-ros-robotics source code, the other is to just compile the target repository.
- Whichever you decide, you must first create the catkin workspace
- - `mkdir -p ~/catkin_ws/src`
- - `cd ~/catkin_ws/src`
- - `wstool init .`
+ 1. Whichever you decide, you must first create the catkin workspace
+ ..1. `mkdir -p ~/catkin_ws/src`
+ ..1. `cd ~/catkin_ws/src`
+ ..1. `wstool init .`
  
  To compile everything
  - `rosws merge https://raw.github.com/start-jsk/rtmros_common/master/.rosinstall -y`
@@ -44,8 +44,8 @@ After this both methods need the following procedures.
 3. Contributing to rtm-ros-robotics related projects.
  - First fork the target repository on GitHub
  - Move to the package directory
- -- `$ source ~/catkin_ws/devel/setup.bash`
- -- '$`roscd rtmros_common`
+ - `$ source ~/catkin_ws/devel/setup.bash`
+ - '$`roscd rtmros_common`
  - Add your forked repository called `<name>` as `<github>`
  - `git remote add <github> <name>`
 To add this repository, you would replace `<name>` with https://github.com/start-jsk/rtmros_common.git
