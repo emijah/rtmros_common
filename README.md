@@ -21,7 +21,7 @@ This document explains how to use and how to contribute to rtm-ros-robotics soft
   6. `rosdep update`  
   7. `source /opt/ros/hydro/setup.bash` # it is better to source ROS environment everytime terminal starts (`echo "source /opt/ros/hydro/setup.bash" >> ~/.bashrc`)  
 
-2. Compile from source code
+2. Compile from source code  
   You have two choices, one is to compile the whole rtm-ros-robotics source code, the other is to just compile the target repository.
  
   Whichever you decide, you must first create the catkin workspace
