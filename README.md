@@ -12,14 +12,14 @@ This document explains how to use and how to contribute to rtm-ros-robotics soft
  rtm-ros-robotics software is distributed as ros-debian packages, if you already use the ROS system, install this software as follows:
  - `sudo apt-get install ros-$ROS_DISTRO-rtmros-common`
  
- If you have not yet installed the base ROS system, please follow [this instruction](http://wiki.ros.org/hydro/Installation/Ubuntu).
- - ``sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -a` main" > /etc/apt/sources.list.d/ros-latest.list'``
- - `wget http://packages.ros.org/ros.key -O - | sudo apt-key add -`
- - `sudo apt-get update`
- - `sudo apt-get update ros-hydro-ros-base` # you may use ros-groovy-ros-base if you want
- - `sudo rosdep init`
- - `rosdep update`
- - `source /opt/ros/hydro/setup.bash` # it is better to source ROS environment everytime terminal starts (`echo "source /opt/ros/hydro/setup.bash" >> ~/.bashrc`)
+ If you have not yet installed the base ROS system, please follow [these instructions](http://wiki.ros.org/hydro/Installation/Ubuntu). These typically tend to be:
+ 1. ``sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -a` main" > /etc/apt/sources.list.d/ros-latest.list'``
+ 2. `wget http://packages.ros.org/ros.key -O - | sudo apt-key add -`
+ 3. `sudo apt-get update`
+ 4. `sudo apt-get update ros-hydro-ros-base` # you may use ros-groovy-ros-base if you want
+ 5. `sudo rosdep init`
+ 6. `rosdep update`
+ 7. `source /opt/ros/hydro/setup.bash` # it is better to source ROS environment everytime terminal starts (`echo "source /opt/ros/hydro/setup.bash" >> ~/.bashrc`)
 
 2. Compile from source code
  You have two choices, one is to compile the whole rtm-ros-robotics source code, the other is to just compile the target repository.
@@ -47,7 +47,7 @@ This document explains how to use and how to contribute to rtm-ros-robotics soft
     `$ roscd <name>`
  3. Add your forked repository called `<name>` as `<github>`  
    `git remote add <github> <name>`  
-   To add this repository, you would replace `<name>` with `https://github.com/start-jsk/rtmros_common.git`. A typical `<name>` if you fork this repository would be, `https://github.com/<user>/rtmros_common.git`
+   To add this repository, you would replace `<name>` with `https://github.com/start-jsk/rtmros_common.git`. A typical `<name>` if you fork this repository would be, `https://github.com/<your github user name>/rtmros_common.git`
  4. `git add origin https://github.com/<your github user name>/rtmros_common`
  6. `git pull upstream master`
  7. Write awesome code
