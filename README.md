@@ -13,13 +13,13 @@ This document explains how to use and how to contribute to rtm-ros-robotics soft
  - `sudo apt-get install ros-$ROS_DISTRO-rtmros-common`
  
  If you have not yet installed the base ROS system, please follow [these instructions](http://wiki.ros.org/hydro/Installation/Ubuntu). These typically tend to be:  
- 1. ``sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -a` main" > /etc/apt/sources.list.d/ros-latest.list'``  
- 2. `wget http://packages.ros.org/ros.key -O - | sudo apt-key add -`  
- 3. `sudo apt-get update`  
- 4. `sudo apt-get update ros-hydro-ros-base` # you may use ros-groovy-ros-base if you want  
- 5. `sudo rosdep init`  
- 6. `rosdep update`  
- 7. `source /opt/ros/hydro/setup.bash` # it is better to source ROS environment everytime terminal starts (`echo "source /opt/ros/hydro/setup.bash" >> ~/.bashrc`)  
+  1. ``sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -a` main" > /etc/apt/sources.list.d/ros-latest.list'``  
+  2. `wget http://packages.ros.org/ros.key -O - | sudo apt-key add -`  
+  3. `sudo apt-get update`  
+  4. `sudo apt-get update ros-hydro-ros-base` # you may use ros-groovy-ros-base if you want  
+  5. `sudo rosdep init`  
+  6. `rosdep update`  
+  7. `source /opt/ros/hydro/setup.bash` # it is better to source ROS environment everytime terminal starts (`echo "source /opt/ros/hydro/setup.bash" >> ~/.bashrc`)  
 
 2. Compile from source code
  You have two choices, one is to compile the whole rtm-ros-robotics source code, the other is to just compile the target repository.
