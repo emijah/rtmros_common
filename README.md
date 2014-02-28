@@ -43,12 +43,12 @@ After this both methods need the following procedures.
 
 3. Contributing to rtm-ros-robotics related projects.
  - First fork the target repository on GitHub
- - Move to the package direcotry
- - `source ~/catkin_ws/devel/setup.bash`
- - `roscd rtmros_common`
- - Add your forked repository called <<name>> as <<github>>
- - `git remote add <<github>> <<name>>`
-To add this repository, you would replace <<name>> with https://github.com/start-jsk/rtmros_common.git
+ - Move to the package directory
+   `$ source ~/catkin_ws/devel/setup.bash`
+   '$`roscd rtmros_common`
+ - Add your forked repository called `<name>` as `<github>`
+ - `git remote add <github> <name>`
+To add this repository, you would replace `<name>` with https://github.com/start-jsk/rtmros_common.git
  - `git add origin https://github.com/<your github user name>/rtmros_common`
  - `git pull upstream master`
  - write awesome code
